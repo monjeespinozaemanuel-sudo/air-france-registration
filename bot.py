@@ -18,19 +18,17 @@ LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "0") or 0)
 
 DB_PATH = os.getenv("DB_PATH", "applications.db")
 AIRCRAFT = [
-("Airbus A220", "AIRBUS"),
-("Airbus A320", "AIRBUS"),
-("Airbus A330", "AIRBUS"),
-("Airbus A340", "AIRBUS"),
-("Airbus A350", "AIRBUS"),
-
-("Boeing B737", "BOEING"),
-("Boeing B777", "BOEING"),
-("Boeing B787", "BOEING"),
-("Boeing B747", "BOEING"),
-
-("Concorde", "CONCORDE"),
-
+    ("Airbus A220", "AIRBUS"),
+    ("Airbus A320", "AIRBUS"),
+    ("Airbus A330", "AIRBUS"),
+    ("Airbus A340", "AIRBUS"),
+    ("Airbus A350", "AIRBUS"),
+    ("Boeing B737", "BOEING"),
+    ("Boeing B777", "BOEING"),
+    ("Boeing B787", "BOEING"),
+    ("Boeing B747", "BOEING"),
+    ("Concorde", "CONCORDE"),
+]
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("air-france-registration")
 
